@@ -1,4 +1,7 @@
-# O-Bootcamp-TQI-Kotlin-Backend-Developer
+# Bootcamp-TQI-Kotlin-Backend-Developer
+
+<img src="" align="right" width="200px">
+
 - 38 cursos.
 - 6 desafios de projeto.
 - 10 desafios de código.
