@@ -1,0 +1,56 @@
+# Exemplo em aula.
+version: '3.9'
+services:
+  apache:
+    image: httpd:latest
+    container_name: my-apache-app
+    ports:
+    - '80:80'
+    volumes:
+    - ./website:/usr/local/apache2/htdocs
+
+# Arquivo de configuração YML para servidor Apache
+
+# Definições básicas do servidor
+server:
+  port: 80
+  document_root: /var/www/html
+  access_log: /var/log/httpd/access.log
+  error_log: /var/log/httpd/error.log
+
+# Definições do virtual host
+virtual_host:
+  server_name: example.com
+  document_root: /var/www/example.com
+  access_log: /var/log/httpd/example.com.access.log
+  error_log: /var/log/httpd/example.com.error.log
+  options: 
+    - FollowSymLinks
+    - MultiViews
+  allow_override: All
+  application_directory: /var/www/example.com/app
+
+# Definições de módulos
+modules:
+  - mod_ssl
+  - mod_rewrite
+  - mod_headers
+
+
+# Para testar o servidor Apache e a aplicação web "Hello, World!", 
+# crie um arquivo index.html dentro do diretório especificado na definição 
+# "application_directory" com o seguinte conteúdo:
+
+# <!DOCTYPE html>
+# <html>
+# <head>
+# <title>Hello, World!</title>
+# </head>
+# <body>
+# <h1>Hello, World!</h1>
+# </body>
+# </html>
+
+# acesse a aplicação web pelo navegador, digitando o endereço IP ou nome de domínio do servidor Apache
+# seguido do caminho para o arquivo index.html:
+# http://<endereço_do_servidor>/app/index.html
