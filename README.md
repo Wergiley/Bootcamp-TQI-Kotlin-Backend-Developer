@@ -7,7 +7,7 @@
 - 10 desafios de código.
 - 1 live.
 - 7 Mentorias.
-- Datas: 22/03 a 21/05/23
+- Datas: 16/03 a 21/05/23
 - Carga Horária 112h.
 
 
