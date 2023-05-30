@@ -8,8 +8,8 @@
 - 1 live.
 - 7 Mentorias.
 - Data Inicial: 16/03
-- Concluído em :30/05/23
-- Carga Horária 112h.
+- Concluído em: 30/05/23
+- Carga Horária: 112h.
 
 
 ## Detalhes do bootcamp
