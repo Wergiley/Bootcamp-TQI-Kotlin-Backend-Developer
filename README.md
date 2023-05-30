@@ -10,6 +10,7 @@
 - Data Inicial: 16/03
 - Concluído em: 30/05/23
 - Carga Horária: 112h.
+- <a href="https://www.dio.me/certificate/618BC1E8">Certificado</a>
 
 
 ## Detalhes do bootcamp
